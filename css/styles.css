@@ -1,0 +1,146 @@
+body {
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+}
+
+.home-page-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.content-wrapper h2 {
+    color: lightseagreen;
+}
+
+.navigation_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.nav-left-side {
+    display: flex;
+}
+
+/* this means to apply to the div in nav-left-side in nav-wrapper */
+.navigation_wrapper>.nav-left-side>div {
+    margin-right: 1.5em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+/* Portfolio Styles*/
+
+.portfolio-items-wrapper {
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-individual-item-wrapper {
+    position: relative;
+}
+
+.portfolio_img_background {
+    height: 50em;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.portfolio-subtitle {
+    user-select: none;
+    font-size: 3em;
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .portfolio-subtitle {
+    user-select: none;
+    font-weight: 600;
+    font-size: 3em;
+    color: lightseagreen;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* About Page Styles */
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.download-wrapper {
+    padding-left: 25%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image-wrapper {
+    padding-left: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image-wrapper img {
+    width: 80%;
+}
+
+.profile-content-wrapper {
+    padding-right: 10%;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
+}
+
+.profile-content-wrapper h3 {
+    font-size: 1.5em;
+}
+
+/* volunteering page */
+.extra-top-padding {
+    padding-top: 150px !important;
+}
