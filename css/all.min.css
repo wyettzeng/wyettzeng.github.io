@@ -218,6 +218,19 @@
     width: 2.5em
 }
 
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.horizontal-right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
 .fa-stack-1x,
 .fa-stack-2x {
     left: 0;
