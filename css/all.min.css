@@ -218,7 +218,7 @@
     width: 2.5em
 }
 
-.vertical-center {
+/* .vertical-center {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -229,6 +229,27 @@
 .horizontal-right {
     margin-left: auto;
     margin-right: 0;
+} */
+
+@media screen and (min-width:1200px) {
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    .horizontal-right {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .hide-on-mobile {
+        display:none
+    }
 }
 
 .fa-stack-1x,
